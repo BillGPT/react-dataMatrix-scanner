@@ -49,6 +49,7 @@ PORT=3001 npm start
 ## 第一次运行需要创建管理员，然后才可以进入admin-app后台进行可视化创建用户
 ### 示例
 这里创建一个用户名为admin，密码为admin，姓名为管理员，管理员权限为true的用户，环境为部署所在服务器的localhost:8989
+实际创建中，用户名和密码要尽可能复杂
 ```shell
 curl -X POST -H "Content-Type: application/json" -d '{"username": "admin", "password": "admin", "name": "admin", "is_admin": true}' http://localhost:8989/user/create
 ```
